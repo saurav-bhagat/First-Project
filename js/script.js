@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded",
 	}
 	);
 
+
 	// 93.3 kg of CO2 per 293.3 units of electricity
 	// 1 Unit Electricity = 0.32 kg of CO2
 	// 1L Diesel = 2.6391 kg of CO2
