@@ -6,9 +6,13 @@ document.addEventListener("DOMContentLoaded",
 			var a = document.getElementById("Electricity").value;
 			var b = document.getElementById("Petrol").value;
 			var c = document.getElementById("Diesel").value;
-			var totalCarbon = (a*0.32+b*2.6391+c*2.3035);
-			var message = "You have emmited " + totalCarbon + "Kg's of carbon";
-			// console.log(message);
+			var totalCarbon = (a*0.32+b*2.6391+c*2.3035).toFixed(2);
+			var message = "You have emitted " + totalCarbon + " Kg's of carbon";
+			if (totalCarbon >= 18.00) {
+				(function () {
+					window.alert("You are over emitting!!\nControl your emission levels");
+				})();
+			}
 			document.querySelector("#results").textContent=message;
 		}
 
